@@ -1,26 +1,29 @@
-# Quantyra Photodiode Jig Licensing
+# Quantyra Photodiode Jig - limited V11 release
 
-This repository contains the unmodified CERN Open Hardware Licence Version 2, Strongly Reciprocal (`CERN-OHL-S-2.0`), and a plain-language guide to its intended use for a future photodiode jig release.
+The source, STL meshes and print/assembly instructions under `designs/v11/` are released under the CERN Open Hardware Licence Version 2, Strongly Reciprocal (`CERN-OHL-S-2.0`). The official, unmodified [LICENSE](LICENSE) governs this release. Source Location: https://github.com/Quantyra/photodiode-jig.
 
-## Current status
+## Variants and files
 
-This is a licensing-information repository only. It contains no photodiode-jig CAD files, meshes, G-code, or other manufacturing source. Publishing this repository does not release or grant rights to any jig design or patent. No patent filing is claimed here.
+- [Dual-port print and assembly instructions](designs/v11/dual-port/PRINT_SIMPLE_V11.md): fixed two-diode holder with four marked shutter positions (left only, both open, both blocked, right only). [Editable OpenSCAD source](designs/v11/dual-port/dual_photodiode_jig_v11.scad); three matching meshes in [exports/v11-simple/](designs/v11/dual-port/exports/v11-simple/).
+- [Single-port print and assembly instructions](designs/v11/single-port/PRINT_SINGLE_V11.md): narrower fixed one-diode holder with manually aligned OPEN and stop-defined CLOSED positions. [Editable OpenSCAD source](designs/v11/single-port/single_photodiode_jig_v11.scad); three matching meshes in [exports/v11-simple-single/](designs/v11/single-port/exports/v11-simple-single/).
 
-The planned license for a future authorized jig-source release is CERN-OHL-S v2.0. The applicable license notice will be included with the specific design files when those files are released. Until then, this repository's license text and guide do not grant rights to jig files that are not present here.
+Each variant contains its own holder, front shutter and rear drawer. The panels are not interchangeable between variants. Follow the respective guide for supplied orientation, millimetre scale, slicing checks, assembly and operating clearances. Sources and meshes are preserved byte-for-byte from the selected V11 snapshot; the dual-port guide omits private evidence-directory references. No separate historical revisions, prototype/coupon exports, G-code, firmware, experiment data or patent documents are included. Historical optional coupon modules remain within the unchanged dual-port source.
 
-## CERN-OHL-S in plain terms
+## Limits
 
-CERN-OHL-S is a strong-copyleft license for open hardware source. It permits people to use, modify, make, and commercially sell products based on covered designs. When someone distributes a product based on covered source, the license generally requires them to provide or point recipients to the complete source needed to make that product. Distributed modifications and larger works that include covered source may also need to be released under CERN-OHL-S, with exceptions for separate available components.
+These are provisional designs with unmeasured package dimensions and tolerances. V11 printing reliability, physical diode fit, sliding friction, retention and optical/light-tight performance have not been physically validated. Seams and lead exits remain openings. PETG and slicer settings in the guides are starting guidance, not validated manufacturing settings. Inspect layer previews and physically fit-test without forcing the diode or straining leads; no production readiness or physical acceptance is claimed. Read all warnings in both guides before use. Covered Source and Products are provided as is, subject to the disclaimer in LICENSE.
 
-The license grants a royalty-free patent license for covered patent claims that the licensor can license and that are necessarily infringed by exercising the license rights. The full license text in `LICENSE` controls; this summary is only an aid and does not change the terms.
+A U.S. provisional application has been filed. This is not an issued patent; no confirmed accorded filing date, protection of every released feature, independently verified ownership or enforceability is asserted. Formal receipt/date confirmation, comparison of filing coverage with this release, and rights/licensor-authority review remain pending.
 
-## Separate commercial licensing
+## Licensing and contact
 
-CERN-OHL-S allows commercial use when its terms are followed. A separate written commercial license may be available for a party that needs different terms, such as permission to keep covered modifications or a product source closed. A separate license is effective only when granted in writing by the party with authority over the relevant rights. This repository does not itself grant a separate commercial license.
+Commercial use is permitted when CERN-OHL-S v2.0 is followed. Consult [LICENSE](LICENSE) for the applicable source-sharing, notice and other requirements; this description does not change its terms or provide legal advice.
 
-For licensing inquiries, contact Dan Fredriksen:
+- CERN-OHL-S / open-source license information: [info@quantyra.org](mailto:info@quantyra.org).
+- Separate written non-copyleft commercial-license requests for closed-source terms: [info@qxcellerate.com](mailto:info@qxcellerate.com).
 
-- Quantyra: [dfredriksen@quantyra.org](mailto:dfredriksen@quantyra.org)
-- qXcellerate: [dan@qxcellerate.com](mailto:dan@qxcellerate.com)
+An inquiry alone grants no rights. A separate license requires a written grant by a party with authority over the relevant rights; no separate commercial license is granted here.
 
-Please describe the product, intended distribution, and which design files or modifications you need to keep closed. An inquiry is not a license grant.
+## Version and citation
+
+Identify the variant, V11, the exact public Git commit SHA and the relevant file paths when citing, modifying or manufacturing this design. Suggested citation: "Quantyra photodiode jig, V11, [single-port or dual-port], Quantyra/photodiode-jig, commit [SHA], [file paths], accessed [date]." Use a commit-pinned repository URL for reproducibility. V11 is a design revision, not a physical validation or certification.
