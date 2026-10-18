@@ -1,4 +1,4 @@
-# V11 G-code package (v11.1.1)
+# V11 G-code package (v11.1.2)
 
 Six original V11 files, preserved byte-for-byte. [SHA256SUMS](SHA256SUMS) uses paths relative to this directory. STL mapping is by corresponding part basename, not geometric equivalence verification. No V5 files are included.
 
@@ -44,4 +44,4 @@ The end uses `G91`, retracts/raises Z, wipes X5 Y5, raises Z5, returns to `G90`,
 
 G-code is covered by the existing root [CERN-OHL-S-2.0 license](../../LICENSE), alongside CAD and hardware documentation. Arduino code remains separately **AGPL-3.0-only** under [arduino/LICENSE](../../arduino/LICENSE). A release/archive must describe this mixed licensing rather than imply either license alone covers every component.
 
-Public packaging version **v11.1.1** prepares the existing G-code package and citation metadata for the Zenodo-enabled release; CAD remains **V11** and all six original G-code files are unchanged. See [CITATION.cff](../../CITATION.cff). The repository is enabled for Zenodo archiving. The parent release workflow will create the GitHub release and verify the resulting DOI. This packaging commit creates no tag or release and assigns no DOI or ORCID. Cite the exact public commit and paths until the verified DOI is added in a separate follow-up.
+Public packaging version **v11.1.2** adds a Zenodo importer compatibility override; CAD remains **V11**, and designs, all six original G-code files and the Arduino sketch are unchanged. [CITATION.cff](../../CITATION.cff) retains the multiple-license list for GitHub citation. Zenodo uses [.zenodo.json](../../.zenodo.json) in preference to CFF, with the scalar primary hardware license `cern-ohl-s-2.0`. Its description and notes explicitly scope CERN-OHL-S-2.0 to CAD/hardware, G-code and documentation; the Arduino logger only remains AGPL-3.0-only. The scalar metadata does not relicense Arduino, offer an OR choice or grant new rights. The repository is enabled for Zenodo archiving. The parent release workflow will create the GitHub release and verify the resulting DOI. This packaging commit creates no tag or release and assigns no DOI or ORCID. Cite the exact public commit and paths until the verified DOI is added in a separate follow-up.

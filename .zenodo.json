@@ -1,0 +1,16 @@
+{
+  "title": "Quantyra photodiode jig",
+  "upload_type": "software",
+  "version": "v11.1.2",
+  "creators": [
+    {
+      "name": "Fredriksen, Daniel Eric",
+      "affiliation": "Quantyra"
+    }
+  ],
+  "publication_date": "2026-10-18",
+  "access_right": "open",
+  "license": "cern-ohl-s-2.0",
+  "description": "V11 single-port and dual-port photodiode jig CAD, STL, machine-specific G-code and hardware documentation. CERN-OHL-S-2.0 applies to the CAD/hardware, G-code and documentation only. The Arduino logger only is separately licensed AGPL-3.0-only under arduino/LICENSE. Packaging version v11.1.2 leaves designs, G-code and the Arduino sketch unchanged; CAD remains V11.",
+  "notes": "Mixed-license archive: the scalar primary hardware license cern-ohl-s-2.0 describes CAD/hardware, G-code and documentation only; it does not cover or relicense the Arduino logger. The Arduino logger only remains AGPL-3.0-only. These licenses apply to their respective components, not as an OR choice. Existing LICENSE and arduino/LICENSE govern; this metadata grants no new rights. Machine-specific G-code limitations are documented in gcode/v11/README.md."
+}
