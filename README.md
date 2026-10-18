@@ -1,13 +1,17 @@
 # Quantyra Photodiode Jig - limited V11 release
 
-The source, STL meshes and print/assembly instructions under `designs/v11/` are released under the CERN Open Hardware Licence Version 2, Strongly Reciprocal (`CERN-OHL-S-2.0`). The official, unmodified [LICENSE](LICENSE) governs this release. Source Location: https://github.com/Quantyra/photodiode-jig.
+The source, STL meshes and print/assembly instructions under `designs/v11/` are released under the CERN Open Hardware Licence Version 2, Strongly Reciprocal (`CERN-OHL-S-2.0`). The unchanged root [LICENSE](LICENSE) governs the CAD and circuit/setup documentation; Arduino code is licensed separately under [AGPL-3.0-only](arduino/LICENSE). Source Location: https://github.com/Quantyra/photodiode-jig.
 
 ## Variants and files
 
 - [Dual-port print and assembly instructions](designs/v11/dual-port/PRINT_SIMPLE_V11.md): fixed two-diode holder with four marked shutter positions (left only, both open, both blocked, right only). [Editable OpenSCAD source](designs/v11/dual-port/dual_photodiode_jig_v11.scad); three matching meshes in [exports/v11-simple/](designs/v11/dual-port/exports/v11-simple/).
 - [Single-port print and assembly instructions](designs/v11/single-port/PRINT_SINGLE_V11.md): narrower fixed one-diode holder with manually aligned OPEN and stop-defined CLOSED positions. [Editable OpenSCAD source](designs/v11/single-port/single_photodiode_jig_v11.scad); three matching meshes in [exports/v11-simple-single/](designs/v11/single-port/exports/v11-simple-single/).
 
-Each variant contains its own holder, front shutter and rear drawer. The panels are not interchangeable between variants. Follow the respective guide for supplied orientation, millimetre scale, slicing checks, assembly and operating clearances. Sources and meshes are preserved byte-for-byte from the selected V11 snapshot; the dual-port guide omits private evidence-directory references. No separate historical revisions, prototype/coupon exports, G-code, firmware, experiment data or patent documents are included. Historical optional coupon modules remain within the unchanged dual-port source.
+Each variant contains its own holder, front shutter and rear drawer. The panels are not interchangeable between variants. Follow the respective guide for supplied orientation, millimetre scale, slicing checks, assembly and operating clearances. Sources and meshes are preserved byte-for-byte from the selected V11 snapshot; the dual-port guide omits private evidence-directory references. No separate historical revisions, prototype/coupon exports, G-code, experiment data or patent documents are included. Historical optional coupon modules remain within the unchanged dual-port source.
+
+## Arduino setup
+
+- [Arduino setup and wiring guide](docs/arduino-setup.md): Classic Nano/Uno reference circuit, exact logger sketch, upload instructions and generic baseline/repeat procedure. [Circuit SVG](docs/photodiode-circuit.svg); [reference sketch](arduino/photodiode_logger/photodiode_logger.ino).
 
 ## Limits
 
@@ -17,10 +21,10 @@ A U.S. provisional application has been filed. This is not an issued patent; no 
 
 ## Licensing and contact
 
-Commercial use is permitted when CERN-OHL-S v2.0 is followed. Consult [LICENSE](LICENSE) for the applicable source-sharing, notice and other requirements; this description does not change its terms or provide legal advice.
+Arduino code is **AGPL-3.0-only** under [arduino/LICENSE](arduino/LICENSE). CAD, the circuit diagram and setup documentation are **CERN-OHL-S-2.0** under the unchanged root [LICENSE](LICENSE). Commercial use is permitted under either license when its applicable requirements are followed, including AGPL-compliant commercial use of the code. Connecting an independent application does not automatically make it subject to the AGPL; obligations depend on the license terms and how software is combined, modified and conveyed or made available for remote interaction.
 
 - CERN-OHL-S / open-source license information: [info@quantyra.org](mailto:info@quantyra.org).
-- Separate written non-copyleft commercial-license requests for closed-source terms: [info@qxcellerate.com](mailto:info@qxcellerate.com).
+- Separate paid non-copyleft commercial-license requests for closed-source terms by written agreement: [info@qxcellerate.com](mailto:info@qxcellerate.com).
 
 An inquiry alone grants no rights. A separate license requires a written grant by a party with authority over the relevant rights; no separate commercial license is granted here.
 
