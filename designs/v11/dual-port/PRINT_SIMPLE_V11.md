@@ -1,6 +1,6 @@
 # V11 simple dual-port photodiode holder
 
-Three printed parts: holder, front shutter and rear drawer. This retains the V5-style fixed holder and V6 four-state shutter. Only the body bores change, from 3.45 to 3.60 mm (+0.075 mm radial clearance). This is a provisional near-fit test, not a measured diode diameter or production tolerance. The presumed diode is uxcell 3 mm flat-head, ASIN B07VNSX74J; its actual dimensions remain unknown.
+Three printed parts: holder, front shutter and rear drawer. This retains the V5-style fixed holder and V6 four-state shutter. Only the body bores change, from 3.45 to 3.60 mm (+0.075 mm radial clearance). The bore size is provisional, not a measured diode diameter or production tolerance. The presumed diode is uxcell 3 mm flat-head, ASIN B07VNSX74J; its actual dimensions remain unknown.
 
 ## Files and reuse
 
@@ -18,7 +18,7 @@ Import the STLs in millimetres at 100% scale. Preserve the supplied orientation:
 
 Prior guidance is PETG, Normal 0.20 mm, supports off, and a 5 mm outer brim on the holder, subject to layer preview and the actual machine/material profile. No new slicer validation or G-code is supplied. Check rails, lead exits, bridges and bed contact in preview; do not resize the model to adjust fit.
 
-Load the diodes from the rear, route the leads through the existing grooves and exits, and slide the rear drawer from the -x/loading side until seated. The front shutter uses the front rails and the same loading side. Check the provisional body fit without forcing the diode. Physical diode fit, sliding friction, light exclusion and print reliability remain untested for V11.
+Load the diodes from the rear, route the leads through the existing grooves and exits, and slide the rear drawer from the -x/loading side until seated. The front shutter uses the front rails and the same loading side. Check body fit without forcing the diode. Dan reports that both single-port and dual-port V11 versions have been printed and that the photodiodes he uses fit perfectly in the dual-port V11. This user-reported fit observation applies only to his photodiodes in this dual-port version; it does not establish fit for other diode models. He has not separately reported single-port diode fit, measured package dimensions, light-exclusion results, friction/repeatability or manufacturing yield.
 
 ## Four marked positions
 
