@@ -1,5 +1,7 @@
 # Quantyra Photodiode Jig - limited V11 release
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23449088.svg)](https://doi.org/10.5281/zenodo.23449088)
+
 The source, STL meshes and print/assembly instructions under `designs/v11/` are released under the CERN Open Hardware Licence Version 2, Strongly Reciprocal (`CERN-OHL-S-2.0`). The unchanged root [LICENSE](LICENSE) governs the CAD, G-code and circuit/setup documentation; Arduino code is licensed separately under [AGPL-3.0-only](arduino/LICENSE). Source Location: https://github.com/Quantyra/photodiode-jig.
 
 ## Variants and files
@@ -34,8 +36,8 @@ An inquiry alone grants no rights. A separate license requires a written grant b
 
 ## Version and citation
 
-Machine-readable metadata: [CITATION.cff](CITATION.cff) and [.zenodo.json](.zenodo.json). See the [mixed-license release notes](gcode/v11/README.md#licensing-and-release-metadata). No DOI is assigned here.
+Machine-readable metadata: [CITATION.cff](CITATION.cff) and [.zenodo.json](.zenodo.json). See the [mixed-license release notes](gcode/v11/README.md#licensing-and-release-metadata). Published packaging version **v11.1.2** is archived on Zenodo: [version DOI 10.5281/zenodo.23449089](https://doi.org/10.5281/zenodo.23449089). The [concept DOI 10.5281/zenodo.23449088](https://doi.org/10.5281/zenodo.23449088) identifies the release series.
 
 Packaging version **v11.1.2** adds a Zenodo importer compatibility override. Zenodo uses `.zenodo.json` in preference to `CITATION.cff`; the CFF retains its multiple-license list for GitHub citation. Zenodo metadata uses the supported scalar primary hardware license `cern-ohl-s-2.0`, scoped explicitly in its description and notes to CAD/hardware, G-code and documentation. The Arduino logger only remains **AGPL-3.0-only** under `arduino/LICENSE`; the scalar archive metadata does not relicense it. The licenses apply to their respective components, not as an OR choice, and this metadata grants no new rights. Designs, G-code and the Arduino sketch are unchanged.
 
-Identify the variant, V11, the exact public Git commit SHA and the relevant file paths when citing, modifying or manufacturing this design. Suggested citation: "Quantyra photodiode jig, V11, [single-port or dual-port], Quantyra/photodiode-jig, commit [SHA], [file paths], accessed [date]." Use a commit-pinned repository URL for reproducibility. V11 is a design revision, not a physical validation or certification.
+Identify the variant, V11, the exact public Git commit SHA and the relevant file paths when citing, modifying or manufacturing this design. Suggested citation: "Fredriksen, Daniel Eric. Quantyra photodiode jig, v11.1.2. Zenodo. https://doi.org/10.5281/zenodo.23449089. V11 [single-port or dual-port], commit [SHA], [file paths], accessed [date]." Use a commit-pinned repository URL for reproducibility. V11 is a design revision, not a physical validation or certification.

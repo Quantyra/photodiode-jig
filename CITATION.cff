@@ -3,6 +3,7 @@ message: "Please cite the repository and identify the V11 variant, exact commit 
 title: "Quantyra photodiode jig"
 type: dataset
 version: "v11.1.2"
+doi: "10.5281/zenodo.23449089"
 date-released: 2026-10-18
 authors:
   - family-names: "Fredriksen"
