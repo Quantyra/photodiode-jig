@@ -1,13 +1,17 @@
 # Quantyra Photodiode Jig - limited V11 release
 
-The source, STL meshes and print/assembly instructions under `designs/v11/` are released under the CERN Open Hardware Licence Version 2, Strongly Reciprocal (`CERN-OHL-S-2.0`). The unchanged root [LICENSE](LICENSE) governs the CAD and circuit/setup documentation; Arduino code is licensed separately under [AGPL-3.0-only](arduino/LICENSE). Source Location: https://github.com/Quantyra/photodiode-jig.
+The source, STL meshes and print/assembly instructions under `designs/v11/` are released under the CERN Open Hardware Licence Version 2, Strongly Reciprocal (`CERN-OHL-S-2.0`). The unchanged root [LICENSE](LICENSE) governs the CAD, G-code and circuit/setup documentation; Arduino code is licensed separately under [AGPL-3.0-only](arduino/LICENSE). Source Location: https://github.com/Quantyra/photodiode-jig.
 
 ## Variants and files
 
 - [Dual-port print and assembly instructions](designs/v11/dual-port/PRINT_SIMPLE_V11.md): fixed two-diode holder with four marked shutter positions (left only, both open, both blocked, right only). [Editable OpenSCAD source](designs/v11/dual-port/dual_photodiode_jig_v11.scad); three matching meshes in [exports/v11-simple/](designs/v11/dual-port/exports/v11-simple/).
 - [Single-port print and assembly instructions](designs/v11/single-port/PRINT_SINGLE_V11.md): narrower fixed one-diode holder with manually aligned OPEN and stop-defined CLOSED positions. [Editable OpenSCAD source](designs/v11/single-port/single_photodiode_jig_v11.scad); three matching meshes in [exports/v11-simple-single/](designs/v11/single-port/exports/v11-simple-single/).
 
-Each variant contains its own holder, front shutter and rear drawer. The panels are not interchangeable between variants. Follow the respective guide for supplied orientation, millimetre scale, slicing checks, assembly and operating clearances. Sources and meshes are preserved byte-for-byte from the selected V11 snapshot; the dual-port guide omits private evidence-directory references. No separate historical revisions, prototype/coupon exports, G-code, experiment data or patent documents are included. Historical optional coupon modules remain within the unchanged dual-port source.
+Each variant contains its own holder, front shutter and rear drawer. The panels are not interchangeable between variants. Follow the respective guide for supplied orientation, millimetre scale, slicing checks, assembly and operating clearances. Sources and meshes are preserved byte-for-byte from the selected V11 snapshot; the dual-port guide omits private evidence-directory references. No separate historical revisions, prototype/coupon exports, experiment data or patent documents are included. Historical optional coupon modules remain within the unchanged dual-port source.
+
+## Machine-specific G-code
+
+[Six original V11 G-code files, STL mappings, embedded settings, command concerns and SHA-256 manifest](gcode/v11/README.md) are included in packaging version **v11.1.0**. CAD remains V11. Review the machine identity limitations and reslice for other machines.
 
 ## Arduino setup
 
@@ -21,7 +25,7 @@ A U.S. provisional application has been filed. This is not an issued patent; no 
 
 ## Licensing and contact
 
-Arduino code is **AGPL-3.0-only** under [arduino/LICENSE](arduino/LICENSE). CAD, the circuit diagram and setup documentation are **CERN-OHL-S-2.0** under the unchanged root [LICENSE](LICENSE). Commercial use is permitted under either license when its applicable requirements are followed, including AGPL-compliant commercial use of the code. Connecting an independent application does not automatically make it subject to the AGPL; obligations depend on the license terms and how software is combined, modified and conveyed or made available for remote interaction.
+Arduino code is **AGPL-3.0-only** under [arduino/LICENSE](arduino/LICENSE). CAD, G-code, the circuit diagram and setup documentation are **CERN-OHL-S-2.0** under the unchanged root [LICENSE](LICENSE). Commercial use is permitted under either license when its applicable requirements are followed, including AGPL-compliant commercial use of the code. Connecting an independent application does not automatically make it subject to the AGPL; obligations depend on the license terms and how software is combined, modified and conveyed or made available for remote interaction.
 
 - CERN-OHL-S / open-source license information: [info@quantyra.org](mailto:info@quantyra.org).
 - Separate paid non-copyleft commercial-license requests for closed-source terms by written agreement: [info@qxcellerate.com](mailto:info@qxcellerate.com).
@@ -29,5 +33,7 @@ Arduino code is **AGPL-3.0-only** under [arduino/LICENSE](arduino/LICENSE). CAD,
 An inquiry alone grants no rights. A separate license requires a written grant by a party with authority over the relevant rights; no separate commercial license is granted here.
 
 ## Version and citation
+
+Machine-readable metadata: [CITATION.cff](CITATION.cff). See the [mixed-license release notes](gcode/v11/README.md#licensing-and-release-metadata). No DOI is assigned here.
 
 Identify the variant, V11, the exact public Git commit SHA and the relevant file paths when citing, modifying or manufacturing this design. Suggested citation: "Quantyra photodiode jig, V11, [single-port or dual-port], Quantyra/photodiode-jig, commit [SHA], [file paths], accessed [date]." Use a commit-pinned repository URL for reproducibility. V11 is a design revision, not a physical validation or certification.
