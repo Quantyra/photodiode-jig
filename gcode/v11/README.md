@@ -1,4 +1,4 @@
-# V11 G-code package (v11.1.0)
+# V11 G-code package (v11.1.1)
 
 Six original V11 files, preserved byte-for-byte. [SHA256SUMS](SHA256SUMS) uses paths relative to this directory. STL mapping is by corresponding part basename, not geometric equivalence verification. No V5 files are included.
 
@@ -44,4 +44,4 @@ The end uses `G91`, retracts/raises Z, wipes X5 Y5, raises Z5, returns to `G90`,
 
 G-code is covered by the existing root [CERN-OHL-S-2.0 license](../../LICENSE), alongside CAD and hardware documentation. Arduino code remains separately **AGPL-3.0-only** under [arduino/LICENSE](../../arduino/LICENSE). A release/archive must describe this mixed licensing rather than imply either license alone covers every component.
 
-Public packaging version **v11.1.0** adds G-code and citation metadata; CAD remains **V11**. See [CITATION.cff](../../CITATION.cff). No DOI, ORCID, tag or GitHub release is assigned by this change. Zenodo deposit and the related release remain pending separate review/publication. Cite the exact public commit and paths until a DOI exists.
+Public packaging version **v11.1.1** prepares the existing G-code package and citation metadata for the Zenodo-enabled release; CAD remains **V11** and all six original G-code files are unchanged. See [CITATION.cff](../../CITATION.cff). The repository is enabled for Zenodo archiving. The parent release workflow will create the GitHub release and verify the resulting DOI. This packaging commit creates no tag or release and assigns no DOI or ORCID. Cite the exact public commit and paths until the verified DOI is added in a separate follow-up.

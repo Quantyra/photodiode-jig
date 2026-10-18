@@ -2,7 +2,8 @@ cff-version: 1.2.0
 message: "Please cite the repository and identify the V11 variant, exact commit and paths used."
 title: "Quantyra photodiode jig"
 type: dataset
-version: "v11.1.0"
+version: "v11.1.1"
+date-released: 2026-10-18
 authors:
   - family-names: "Fredriksen"
     given-names: "Daniel Eric"
@@ -15,5 +16,5 @@ license:
 abstract: >-
   V11 single-port and dual-port photodiode jig CAD, STL and machine-specific
   G-code, with hardware documentation under CERN-OHL-S-2.0. Arduino logger
-  code is separately AGPL-3.0-only. Version v11.1.0 is a packaging version;
+  code is separately AGPL-3.0-only. Version v11.1.1 is a packaging version;
   the CAD revision remains V11. See README.md for licensing and limitations.
